@@ -6,7 +6,7 @@ function App() {
 
 
  async function getData() {
-   let unprocessed = await fetch("http://localhost:8080/all");
+   let unprocessed = await fetch("https://backend-seven-sandy-99.vercel.app/all");
    let processed =  await unprocessed.json();
    setPageData({heading:processed[0].heading, paragraph:processed[0].paragraph});
  }
