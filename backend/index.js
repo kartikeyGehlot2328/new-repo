@@ -5,7 +5,7 @@ const app = express();
 const dbConnect = require('./Models/db.js');
 const cors = require('cors');
 
-app.use(cors({origin:true}));
+app.use(cors({origin:["https://frontend-weld-gamma-17.vercel.app/"]}));
 
 
 dbConnect();
